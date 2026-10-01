@@ -1,0 +1,20 @@
+namespace: student-registration
+createNamespace: false
+backend:
+  replicaCount: 2
+  image:
+    repository: docker.io/REPLACE_DOCKERHUB_USER/student-registration-backend
+    tag: "latest"
+    pullPolicy: IfNotPresent
+  dbSecretName: student-registration-db-secret
+frontend:
+  replicaCount: 2
+  image:
+    repository: docker.io/REPLACE_DOCKERHUB_USER/student-registration-frontend
+    tag: "latest"
+    pullPolicy: IfNotPresent
+ingress:
+  enabled: true
+  className: nginx
+  host: ""
+  annotations: {}

@@ -1,0 +1,6 @@
+apiVersion: v2
+name: student-registration
+description: Cloud-neutral Student Registration application for AWS EKS, Azure AKS and GCP GKE
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
