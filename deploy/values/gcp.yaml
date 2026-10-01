@@ -1,0 +1,10 @@
+backend:
+  image:
+    repository: docker.io/REPLACE_DOCKERHUB_USER/student-registration-backend
+    tag: "latest"
+frontend:
+  image:
+    repository: docker.io/REPLACE_DOCKERHUB_USER/student-registration-frontend
+    tag: "latest"
+ingress:
+  enabled: true
